@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Technology';
+    src: url("./Asset/Technology.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #F1EFE7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 600px;
+    height: 300px;
+    background-color: #84827B;
+    border-radius: 15px;
+    position: relative;
+}
+
+.controller-container {
+    background-color: #84827B;
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.controller-container #stop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.controller-container #music {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.music-control-none {
+    display: none;
+}
+
+.content-container {
+    width: 550px;
+    height: 250px;
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+    margin: 25px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.day-container {
+    flex-grow: 1;
+}
+
+.day-active {
+    color: white !important;
+    background-color: #84827B;
+}
+
+.day-container p {
+    font-family: "Technology";
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 3px 0;
+    color: #3d3d3d;
+}
+
+.clock-container {
+    flex-grow: 1;
+    position: relative;
+}
+
+.clock-container h2{
+    font-family: 'Technology';
+    font-size: 125px;
+    margin: 0 10px;
+}
+
+.clock-container .time .music-image {
+    width: 100px;
+    height: 100px;
+}
+
+.clock-container .time .music-image img {
+    width: 100%;
+    height: 100%;
+    animation: rotasi 20s linear infinite;
+    border-radius: 50%;
+}
+
+@keyframes rotasi {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.clock-container .time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clock-container p:nth-last-child(2){
+    font-size: 25px;
+    font-family: 'Technology';
+}
+
+.clock-container .music-desc p {
+    font-size: medium;
+}
+
+.clock-container .music-desc h5 {
+    font-size: 20px;
+}
+
+.content-container .border {
+    background-color: white;
+    height: 90%;
+    width: 5px;
+    margin: 0 10px;
+}

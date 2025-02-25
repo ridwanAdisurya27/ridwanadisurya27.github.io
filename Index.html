@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="controller-container">
+            <span id="stop">
+                <i data-feather="power" onclick="StopTimer()"></i>
+            </span>
+            <span id="music">
+                <i data-feather="pause" onclick="MusicControl()"></i>
+                <i data-feather="play" class="music-control-none" onclick="MusicControl()"></i>
+            </span>
+        </div>
+        <div class="content-container">
+            <div class="day-container">
+                <p>MON</p>
+                <p>TUE</p>
+                <p>WED</p>
+                <p>THU</p>
+                <p>FRI</p>
+                <p>SAT</p>
+                <p>SUN</p>
+            </div>
+            <span class="border"></span>
+            <div class="clock-container">
+                <div class="time">
+                    <div class="music-image">
+                        <img src="./Asset/WIN_20240813_07_11_02_Pro.jpg">
+                    </div>
+                    <h2>1</h2>
+                </div>
+                <p class="date">12-12-2025</p>
+                <div class="music-desc">
+                    <div class="music-title">
+                        <h5> Celtic Moon</h5>
+                        <p> Artist </p>
+                    </div>
+                    <audio autoplay loop id="music-file">
+                        <source src="./Asset/Celtic Moon   YouTube.mp3">
+                        Your Browser Dont Support Audio
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    feather.replace();
+</script>
+<script src="script.js"></script>
+</html>
